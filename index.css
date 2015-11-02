@@ -1,0 +1,60 @@
+body {
+    background-color:deeppink;
+}
+
+#container {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 900px;
+    height: 900px;
+    margin: auto;
+
+}
+
+#kanye {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+ 
+    
+}
+
+#quote {
+    display: inline-block;
+    position: fixed;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 40%;
+    height: 200px;
+    margin: auto;
+
+}
+
+
+.picture {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}  
+
+p.quote {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
