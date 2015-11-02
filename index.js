@@ -15,11 +15,11 @@ var para = document.getElementsByClassName('quote')[0];
 
 
 setImage();
-setQuote();
+// setQuote();
 
 pic.addEventListener('click',function(){
   setImage();
-  setQuote();
+  // setQuote();
 });
 
 
@@ -39,21 +39,22 @@ function getRandomImage() {
       notFound = false;
     }
   }
+  setQuote(rand);
   return images[rand];
 }
-function setQuote() {
-  para.innerText = getRandomQuote();
+function setQuote(rand) {
+  para.innerText = getRandomQuote(rand);
 }
 
-function getRandomQuote() {
-  var notFound = true;
-  var rand;
-  var current = para.innerText;
-  while(notFound) {
-    rand = Math.round(Math.random()*(quotes.length-1));
-    if (quotes[rand] != current) {
-      notFound = false;
-    }
-  }
+function getRandomQuote(rand) {
+  // var notFound = true;
+  // var rand;
+  // var current = para.innerText;
+  // while(notFound) {
+  //   rand = Math.round(Math.random()*(quotes.length-1));
+  //   if (quotes[rand] != current) {
+  //     notFound = false;
+  //   }
+  // }
   return quotes[rand];
 }
