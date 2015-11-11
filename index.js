@@ -1,3 +1,5 @@
+// Each image, quote, and color is binded together by the their placement within the array
+
 var images = [
   'images/download.png',
   'images/tumblr.png',
@@ -10,6 +12,12 @@ var quotes = [
   'Nothing in life is promised except death.'
 ];
 
+var colors= [
+   'red',
+   'blue',
+   'deeppink'];
+
+
 var pic = document.getElementsByClassName('picture')[0];
 var para = document.getElementsByClassName('quote')[0];
 
@@ -18,6 +26,7 @@ setImage();
 // setQuote();
 
 pic.addEventListener('click',function(){
+
   setImage();
   // setQuote();
 });
@@ -40,6 +49,7 @@ function getRandomImage() {
     }
   }
   setQuote(rand);
+  changeColor(rand);
   return images[rand];
 }
 function setQuote(rand) {
@@ -57,4 +67,8 @@ function getRandomQuote(rand) {
   //   }
   // }
   return quotes[rand];
+}
+
+function changeColor(rand) {
+  document.body.style["background-color"] = colors[rand];
 }
