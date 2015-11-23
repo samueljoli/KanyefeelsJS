@@ -1,5 +1,3 @@
-// Each image, quote, and color is binded together by the their placement within the array
-
 var images = [
   'images/download.png', // 1
   'images/tumblr.png', //2
@@ -20,31 +18,43 @@ var images = [
 ];
 
 var quotes = [
-  "That's a lowkey but highkey mad Kanye.", // 1
+  "Kanye is lowkey but highkey mad.", // 1
   'Kanye is proud of you but still thinking how he could do better.', //2
   "Kanye thinks you're sus.", //3
-  "That's a flustered Kanye.", //4
+  "Kanye is genuinely flustered.", //4
   'Kanye is not amused at all.', //5
   'Kanye is trying to figure out where the fucks he gave went.', //6
   'Kanye is mad ecstatic for life!', //7
-  'This is Kanye acknowledging performances with a half-hearted applause.', //8
-  'You caught Kanye plesantly surprised.', //9
+  'Kanye is giving a half-hearted applause.', //8
+  'Kanye is pleasantly surprised.', //9
   'Kanye is incredibly irritated for being misunderstood.', //10
   'Kanye is mildly astounded.', //11
   'Kanye is deep in thought.', //12
   'Kanye is real annoyed.', //13
   'Kanye is very confused.', //14
-  "This is Kanye when he receives Kim's fire booty pic.", //15
+  "Kanye just received Kim's fire booty pic.", //15
   'Kanye uses an invisible cloaking device to hide from his haters.', //16
 
 
 ];
 
 var colors= [
-   '#fdd10c', // 1
-   '#fdd10c', // 2
-   '#fdd10c', // 3
-   '#fdd10c', // 4
+   '#fa8072', // 1
+   '#ffa500', // 2
+   '#8fbc8f', // 3
+   '#c71585', // 4
+   '#5f9ea0', // 5
+   '#595959', // 6
+   '#ffcca3', // 7
+   '#ba8ce3', // 8
+   '#f08a6b', // 9
+   '#264000', // 10
+   '#40738C', // 11
+   '#778899', // 12
+   '#800000', // 13
+   '#f08080', // 14
+   '#00fa9a', // 15
+   '#00366B', // 16
 ];
 
 
