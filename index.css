@@ -24,34 +24,37 @@ body {
 }
 
 #kanye {
+   /* background-color: blue;*/
     display: inline-block;
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    width: 500px;
-    height: 500px;
+    width: 50%;
+    height: 50%;
     margin: auto;
  
-    
 }
 
 #quote {
-    display: inline-block;
-    position: fixed;
-    top: 100%;
-    bottom: 0;
+/*    background-color: beige;*/
+    /*display: inline-block;*/
+    position: relative;
+    top: 70%;
+  
     left: 0;
     right: 0;
     width: 40%;
-    height: 200px;
+    height: 15%;
     margin: auto;
 
 }
 
 
 .picture {
+    max-height: 50%;
+    max-width: 50%;
     display: inline-block;
     position: fixed;
     top: 0;
@@ -66,3 +69,38 @@ p.quote {
     text-align: center;
     font-weight: bold;
 }
+
+@media only screen and (max-device-width : 667px) {
+  #quote {
+    top:100%;
+  }
+
+  .picture {
+    max-width:none;
+    max-height:none;
+    width:50%;
+    height:50%;
+  }
+
+  .specialpicture10 {
+    max-width:none;
+    max-height:none;
+    width:90%;
+    height:50%;
+  }
+
+  .specialpicture2 {
+    max-width:none;
+    max-height:none;
+    width:60%;
+    height:50%;
+  }
+
+  .specialpicture4 {
+    max-width:none;
+    max-height:none;
+    width:70%;
+    height:50%;
+  }
+}
+

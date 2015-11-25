@@ -5,16 +5,16 @@ var images = [
   'images/kanye(2)copy.png', //4
   'images/kanye(3)bw.png', //5
   'images/kanye(4)bw.png', //6
-  'images/kanye(5)bw.png',  //7
-  'images/kanye(6)bw.gif', //8
-  'images/kanye(8).png', //9
-  'images/kanye(8)bw.png', //10
-  'images/kanye(9)bw.png', //11
-  'images/kanye(10)bw.png', //12
-  'images/kanye(11)bw.png', //13
-  'images/kanye(12)bw.png', //14
-  'images/kanye(14)bw.png', //15
-  'images/kanye1.png', //16
+  // 'images/kanye(5)bw.png',  //7
+  // 'images/kanye(6)bw.gif', //8
+  // 'images/kanye(8).png', //9
+  // 'images/kanye(8)bw.png', //10
+  // 'images/kanye(9)bw.png', //11
+  // 'images/kanye(10)bw.png', //12
+  // 'images/kanye(11)bw.png', //13
+  // 'images/kanye(12)bw.png', //14
+  // 'images/kanye(14)bw.png', //15
+  // 'images/kanye1.png', //16
 ];
 
 var quotes = [
@@ -90,6 +90,7 @@ function getRandomImage() {
   }
   setQuote(rand);
   changeColor(rand);
+  specialImage(rand);
   return images[rand];
 }
 function setQuote(rand) {
@@ -111,4 +112,25 @@ function getRandomQuote(rand) {
 
 function changeColor(rand) {
   document.body.style["background-color"] = colors[rand];
+}
+
+function specialImage(num){
+  console.log(num)
+  if (num === 10) {
+    $('.picture').addClass("specialpicture10")
+  } else {
+    $('.picture').removeClass("specialpicture10")
+  }
+
+  if (num === 3) {
+    $('.picture').addClass("specialpicture2")
+  } else {
+    $('.picture').removeClass("specialpicture2")
+  }
+
+  if (num === 5) {
+    $('.picture').addClass("specialpicture4")
+  } else {
+    $('.picture').removeClass("specialpicture4")
+  }
 }
