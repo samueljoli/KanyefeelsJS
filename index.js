@@ -5,16 +5,16 @@ var images = [
   'images/kanye(2)copy.png', //4
   'images/kanye(3)bw.png', //5
   'images/kanye(4)bw.png', //6
-  // 'images/kanye(5)bw.png',  //7
-  // 'images/kanye(6)bw.gif', //8
-  // 'images/kanye(8).png', //9
-  // 'images/kanye(8)bw.png', //10
-  // 'images/kanye(9)bw.png', //11
-  // 'images/kanye(10)bw.png', //12
-  // 'images/kanye(11)bw.png', //13
-  // 'images/kanye(12)bw.png', //14
-  // 'images/kanye(14)bw.png', //15
-  // 'images/kanye1.png', //16
+  'images/kanye(5)bw.png',  //7
+  'images/kanye(6)bw.gif', //8
+  'images/kanye(8).png', //9
+  'images/kanye(8)bw.png', //10
+  'images/kanye(9)bw.png', //11
+  'images/kanye(10)bw.png', //12
+  'images/kanye(11)bw.png', //13
+  'images/kanye(12)bw.png', //14
+  'images/kanye(14)bw.png', //15
+  'images/kanye1.png', //16
 ];
 
 var quotes = [
@@ -116,10 +116,12 @@ function changeColor(rand) {
 
 function specialImage(num){
   console.log(num)
-  if (num === 10) {
+  if (num === 11) {
     $('.picture').addClass("specialpicture10")
+    $('.kanye').addClass("specialpicture10")
   } else {
     $('.picture').removeClass("specialpicture10")
+    $('.kanye').removeClass("specialpicture10")
   }
 
   if (num === 3) {

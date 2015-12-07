@@ -11,43 +11,30 @@ body {
 }
 
 #container {
-    display: inline-block;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 900px;
-    height: 900px;
+    background-color:none;
+    display: block;
     margin: auto;
+    width: 90%;
+    height: 90%;
+    margin-top: 10%;
+
 
 }
 
-#kanye {
-   /* background-color: blue;*/
-    display: inline-block;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 50%;
-    height: 50%;
+.kanye {
+    background-color:none;
+    width:50%;
+    height:50%;
     margin: auto;
+    
+
  
 }
 
 #quote {
-/*    background-color: beige;*/
-    /*display: inline-block;*/
-    position: relative;
-    top: 70%;
-  
-    left: 0;
-    right: 0;
-    width: 40%;
-    height: 15%;
-    margin: auto;
+    background-color:none;
+
+
 
 }
 
@@ -55,22 +42,33 @@ body {
 .picture {
     max-height: 50%;
     max-width: 50%;
-    display: inline-block;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    display: block;
     margin: auto;
+
 }  
 
 p.quote {
-    font-size: 30px;
+    font-size: 2em;
     text-align: center;
     font-weight: bold;
 }
 
-@media only screen and (max-device-width : 667px) {
+@media only screen and (max-device-width : 320px) {
+
+  p.quote {
+    font-size: 3em;
+  } 
+
+
+  #container {
+    background-color:none;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    margin-top: 40%;    
+  }
+
   #quote {
     top:100%;
   }
@@ -78,8 +76,8 @@ p.quote {
   .picture {
     max-width:none;
     max-height:none;
-    width:50%;
-    height:50%;
+    width:100%;
+    height:100%;
   }
 
   .specialpicture10 {
@@ -92,15 +90,163 @@ p.quote {
   .specialpicture2 {
     max-width:none;
     max-height:none;
-    width:60%;
+    width:100%;
     height:50%;
   }
 
   .specialpicture4 {
     max-width:none;
     max-height:none;
-    width:70%;
+    width:100%;
     height:50%;
   }
 }
+
+@media only screen and (max-device-width : 375px) {
+  
+  p.quote {
+    font-size: 3em;
+  }  
+
+  #container {
+    background-color:none;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    margin-top: 40%;    
+  }
+
+  #quote {
+    top:100%;
+  }
+
+  .picture {
+    max-width:none;
+    max-height:none;
+    width:100%;
+    height:100%;
+  }
+
+  .specialpicture10 {
+    max-width:none;
+    max-height:none;
+    width:90%;
+    height:50%;
+  }
+
+  .specialpicture2 {
+    max-width:none;
+    max-height:none;
+    width:100%;
+    height:50%;
+  }
+
+  .specialpicture4 {
+    max-width:none;
+    max-height:none;
+    width:100%;
+    height:50%;
+  }    
+
+}
+
+@media only screen and (max-device-width : 414px){
+
+  p.quote {
+    font-size: 3em;
+  }  
+
+  #container {
+    background-color:none;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    margin-top: 40%;    
+  }
+
+  #quote {
+    top:100%;
+  }
+
+  .picture {
+    max-width:none;
+    max-height:none;
+    width:100%;
+    height:100%;
+  }
+
+  .specialpicture10 {
+    max-width:none;
+    max-height:none;
+    width:90%;
+    height:50%;
+  }
+
+  .specialpicture2 {
+    max-width:none;
+    max-height:none;
+    width:100%;
+    height:50%;
+  }
+
+  .specialpicture4 {
+    max-width:none;
+    max-height:none;
+    width:100%;
+    height:50%;
+  }  
+
+}
+
+@media only screen and (max-device-width : 768px){
+
+  p.quote {
+    font-size: 3em;
+  }  
+
+  #container {
+    background-color:none;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    margin-top: 30%;    
+  }
+
+  #quote {
+    top:100%;
+  }
+
+  .picture {
+    max-width:none;
+    max-height:none;
+    width:100%;
+    height:100%;
+  }
+
+  .specialpicture10 {
+    max-width:none;
+    max-height:none;
+    width:90%;
+    height:50%;
+  }
+
+  .specialpicture2 {
+    max-width:none;
+    max-height:none;
+    width:100%;
+    height:50%;
+  }
+
+  .specialpicture4 {
+    max-width:none;
+    max-height:none;
+    width:100%;
+    height:50%;
+  }  
+
+}
+
 
